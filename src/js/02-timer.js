@@ -90,3 +90,5 @@ function updateTimer({ days, hours, minutes, seconds }) {
   minuteEl.textContent = minutes;
   secondEl.textContent = seconds;
 }
+
+console.log('hello');
