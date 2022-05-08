@@ -58,7 +58,6 @@ const timer = {
 startBtn.addEventListener('click', () => {
   timer.start();
   startBtn.setAttribute('disabled', 'disabled');
-  console.log('hello');
 });
 
 function addLeadingZero(value) {
@@ -90,5 +89,3 @@ function updateTimer({ days, hours, minutes, seconds }) {
   minuteEl.textContent = minutes;
   secondEl.textContent = seconds;
 }
-
-console.log('hello');
