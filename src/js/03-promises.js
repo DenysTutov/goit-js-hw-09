@@ -21,11 +21,11 @@ formEl.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
 
-  const delay = formEl.elements.delay.value;
-  const step = formEl.elements.step.value;
-  const amount = formEl.elements.amount.value;
+  const delay = +formEl.elements.delay.value;
+  const step = +formEl.elements.step.value;
+  const amount = +formEl.elements.amount.value;
 
-  generatePromises(+delay, +step, +amount);
+  generatePromises(delay, step, amount);
 }
 
 function generatePromises(delay, step, amount) {
